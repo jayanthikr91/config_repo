@@ -1,0 +1,16 @@
+node
+{
+
+stage('preparation')
+{
+
+props = readProperties file: 'propertiesfolder/propeties.txt'
+sh props.UTIL_REPO_url
+ciCdUtility=load props.JAVA_CI_CD_GROOVY
+commonUtility=load props.COMMON_GROOVY
+print 'Checkout Pipeline Success'
+ciCdUtility.execute();
+					
+}
+
+}
