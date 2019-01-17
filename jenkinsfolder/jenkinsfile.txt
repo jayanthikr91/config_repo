@@ -1,10 +1,11 @@
 node
 {
-checkout scm
+checkout scm;
+props = readProperties file: 'propertyfolder/propeties.txt'
 stage('preparation')
 {
 
-props = readProperties file: 'propertyfolder/propeties.txt'
+
 sh props.UTIL_REPO_URL
 ciCdUtility=load props.JAVA_CI_CD_GROOVY
 commonUtility=load props.COMMON_GROOVY
