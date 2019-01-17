@@ -1,0 +1,11 @@
+UTIL_REPO_URL=https://github.com/MeghanaNettem2/util_repo/
+JAVA_CI_CD_GROOVY_URL=util_repo/java/java-ci-cd.groovy
+COMMON_GROOVY_URL=util_repo/common/common.groovy
+
+
+JAVA_APP_REPO_GIT_URL=https://github.com/MeghanaNettem2/devpractice.git
+
+
+SONAR_SCAN=mvn sonar:sonar
+SONAR_HOST=-Dsonar.host.url=http://my40867dns.eastus2.cloudapp.azure.com
+MAVEN_BUILD=mvn clean install
