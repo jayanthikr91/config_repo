@@ -14,3 +14,5 @@ TOMCAT_DEPLOY= cp target/*.war
 TOMCAT_LOCATION=/home/minduseradmin/apache-tomcat-8.5.35/webapps
 
 ARTIFACTORY_ID=http://my16083dns.eastus2.cloudapp.azure.com:8081/artifactory
+
+BUILD_EMAIL_RECIPIENT=sweetynmeghana@gmail.con
