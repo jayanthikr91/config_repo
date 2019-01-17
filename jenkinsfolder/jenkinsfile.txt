@@ -18,6 +18,7 @@ ciCdUtility.execute(props);
 }
 catch(err)
 {
-commonUtility.sendEmail();
+commonUtility.failureEmail();
+print 'CAME TO CATCH BLOCKKKK'
 }
 }
