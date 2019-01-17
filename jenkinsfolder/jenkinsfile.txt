@@ -4,7 +4,7 @@ checkout scm
 stage('preparation')
 {
 
-props = readProperties file: 'propertiesfolder/propeties.txt'
+props = readProperties file: 'propertyfolder/propeties.txt'
 sh props.UTIL_REPO_url
 ciCdUtility=load props.JAVA_CI_CD_GROOVY
 commonUtility=load props.COMMON_GROOVY
