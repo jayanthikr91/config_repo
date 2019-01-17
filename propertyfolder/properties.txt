@@ -6,8 +6,8 @@ POM_FILE=pom.xml
 JAVA_APP_REPO_GIT_URL=https://github.com/MeghanaNettem2/devpractice.git
 
 
-SONAR_SCAN=mvn sonar:sonar
-SONAR_HOST=-Dsonar.host.url=http://my40867dns.eastus2.cloudapp.azure.com
+SONAR_SCAN=mvn sonar:sonar -Dsonar.host.url=
+SONAR_HOST=http://my40867dns.eastus2.cloudapp.azure.com
 MAVEN_BUILD=mvn clean install
 
 TOMCAT_DEPLOY=target/*.war
