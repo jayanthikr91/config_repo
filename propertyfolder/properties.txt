@@ -1,4 +1,4 @@
-UTIL_REPO_URL= git clone https://github.com/MeghanaNettem2/util_repo/
+UTIL_REPO_URL= git clone https://github.com/MeghanaNettem2/util_repo.git
 JAVA_CI_CD_GROOVY_URL=util_repo/java/java-ci-cd.groovy
 COMMON_GROOVY_URL=util_repo/common/common.groovy
 
