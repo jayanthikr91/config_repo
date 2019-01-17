@@ -1,7 +1,7 @@
 node
 {
 checkout scm;
-props = readProperties file: 'propertyfolder/propeties.txt'
+props = readProperties file: 'propertyfolder/properties.txt'
 stage('preparation')
 {
 
