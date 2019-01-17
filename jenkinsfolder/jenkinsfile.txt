@@ -10,7 +10,7 @@ sh props.UTIL_REPO_URL
 ciCdUtility=load props.JAVA_CI_CD_GROOVY_URL
 commonUtility=load props.COMMON_GROOVY_URL
 print 'Checkout Pipeline Success'
-ciCdUtility.execute();
+ciCdUtility.execute(props);
 					
 }
 
