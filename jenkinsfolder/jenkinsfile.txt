@@ -1,5 +1,7 @@
 node
 {
+try{
+
 checkout scm;
 props = readProperties file: 'propertyfolder/properties.txt'
 stage('preparation')
@@ -13,5 +15,9 @@ print 'Checkout Pipeline Success'
 ciCdUtility.execute(props);
 					
 }
-
+}
+catch(err)
+{
+commonUtility.sendEmail();
+}
 }
