@@ -2,7 +2,7 @@ UTIL_REPO_URL=https://github.com/MeghanaNettem2/util_repo/
 JAVA_CI_CD_GROOVY_URL=util_repo/java/java-ci-cd.groovy
 COMMON_GROOVY_URL=util_repo/common/common.groovy
 
-
+POM_FILE=pom.xml
 JAVA_APP_REPO_GIT_URL=https://github.com/MeghanaNettem2/devpractice.git
 
 
