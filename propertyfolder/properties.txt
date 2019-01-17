@@ -10,7 +10,7 @@ SONAR_SCAN=mvn sonar:sonar -Dsonar.host.url=
 SONAR_HOST=http://my40867dns.eastus2.cloudapp.azure.com
 MAVEN_BUILD=mvn clean install
 
-TOMCAT_DEPLOY=target/*.war
+TOMCAT_DEPLOY= cp target/*.war
 TOMCAT_LOCATION=/home/minduseradmin/apache-tomcat-8.5.35/webapps
 
 ARTIFACTORY_ID=http://my16083dns.eastus2.cloudapp.azure.com:8081/artifactory
