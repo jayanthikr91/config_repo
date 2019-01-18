@@ -18,7 +18,7 @@ ciCdUtility.execute(props);
 }
 catch(err)
 {
-commonUtility.failureEmail();
+commonUtility.failureEmail(err);
 echo "${err}"
 print 'CAME TO CATCH BLOCKKKK'
 }
