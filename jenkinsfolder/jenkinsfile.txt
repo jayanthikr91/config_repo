@@ -13,7 +13,8 @@ ciCdUtility=load props.JAVA_CI_CD_GROOVY_URL
 commonUtility=load props.COMMON_GROOVY_URL
 print 'Checkout Pipeline Success'
 ciCdUtility.function(props);
-					
+echo "${ciCdUtility}"
+echo "${commonUtility}"					
 }
 }
 catch(err)
