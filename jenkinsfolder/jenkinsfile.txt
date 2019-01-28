@@ -8,20 +8,21 @@ stage('preparation')
 {
 
 deleteDir()
-sh props.UTIL_REPO_URL
-ciCdUtility=load props.JAVA_CI_CD_GROOVY_URL
-echo "${ciCdUtility}"
-commonUtility=load props.COMMON_GROOVY_URL
-print 'Checkout Pipeline Success'
-ciCdUtility.function(props);
-
+sh prop.GIT_CLONE_CMD+" "+prop.UTIL_REPO_URL
+echo "cloned successfully"
+javautility=load prop.JAVA_GROOVY_FILE_LOC
+commonutility=load prop.COMMON_GROOVY_FILE_LOC
+javautility.execute(); 
 echo "${commonUtility}"					
 }
+stage('success mail'){
+  commonutility.sendSuccessMail();
+  }  
+
 }
-catch(err)
-{
-commonUtility.failureEmail(err);
-echo "${err}"
-print 'CAME TO CATCH BLOCKKKK'
-}
+catch(error){
+  stage('failure mail'){    
+   commonutility.sendFailureMail(error);
+  }
+  }
 }
